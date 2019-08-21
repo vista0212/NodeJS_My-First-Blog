@@ -1,0 +1,40 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "crypto": "^1.0.1",
+    "ejs": "^2.6.1",
+    "ejs-lint": "^0.3.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "jsonfile": "^5.0.0",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.4.17",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "randomstring": "^1.1.5"
+  },
+  "bin": {
+    "blog": "www.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kb4ek/Node_Blog.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/kb4ek/Node_Blog/issues"
+  },
+  "homepage": "https://github.com/kb4ek/Node_Blog#readme"
+}

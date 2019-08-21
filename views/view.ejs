@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%=title%></title>
+    <link type="text/css" rel="stylesheet" href="stylesheet/header.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheet/view.css" />
+    <link type="text/css" rel="stylesheet" href="stylesheet/footer.css" />
+    <style>a{text-decoration: none;}</style>
+</head>
+<body>
+    <header>
+        <div id="profile">
+            <h1 id="profile-top">Blog</h1>
+            <a href="/"><div id="profile-img"></div></a>
+            <h1 id="profile-name">kb4ek</h1>
+            <div class="profile-line"></div>
+            <div id="categories">
+                <a id="list">카테고리</a>
+                <div class="profile-line"></div>
+                <a href="/board?category=notice&page=1" class="categories">공지사항</a>
+                <a href="/board?category=free&page=1" class="categories">자유게시판</a>
+                <a class="categories"></a>
+            </div>
+        </div> 
+    </header>
+    <main>
+        <section id="contents-area">
+            <div id="contents">
+                <div id="contents-top">
+                    <div id="title">
+                        <a><%= contents.title %></a>
+                        <div id="date">
+                            <%= formatDate(contents.date)%>
+                        </div>
+                    </div>
+                </div>
+                <div id="contents-body">
+                    <p><%= contents.contents%></p>
+                </div>
+            </div>
+        </section>
+<!--         <section id="comments">
+            <div id="comment-form">
+                <form action='/comment/write' method="POST">
+                    <input type="text" name="email" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Password" />
+                    <textarea name="comments" cols="100" rows="10" placeholder="Comments..."></textarea>
+                </form>
+            </div>
+        </section> -->
+    </main>
+    <footer id="footer">
+        <a id="copyright">&copy; all right reversed by kb4ek</a>
+    </footer>
+    <% function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+    
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+    
+        return [year, month, day].join('-');
+    } %>
+</body>
+</html>

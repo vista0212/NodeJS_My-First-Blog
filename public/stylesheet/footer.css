@@ -1,0 +1,10 @@
+#footer{
+    margin-left: 430px;
+    width: 100%;
+    height: 25px;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #101c28, #2d4459);
+}
+#copyright{
+    color: #fff;
+}

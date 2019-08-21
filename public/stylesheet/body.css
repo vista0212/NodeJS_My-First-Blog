@@ -1,0 +1,68 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+main{
+    box-sizing: border-box;
+    margin-left: 430px;
+    border-bottom: 1px solid #ccc;
+}
+#preview{
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+.preview{
+    padding-top: 40px;
+    margin: 0px 40px 40px 40px;
+    width: 43%;
+    height: 480px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+}
+.p1{
+    margin-left: 60px;
+}
+.preview-title{
+    font-size: 15pt;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.more-post{
+    font-size: 13pt;
+    float: right;
+    color: #000;
+}
+.preview-list{
+    display: block;
+    padding: 10px 0px;
+    margin-left: 10px;
+}
+.post{
+    font-size: 15pt;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.post a{
+    cursor: pointer;
+    color: #000;
+}
+.post a:hover{
+    border-bottom: 1px solid #000;
+}
+.post_last{
+    border: none;
+}
+.date{
+    display: inline-block;
+    float: right;
+    font-size: 13pt;
+}
+#i_dont_know{
+    width: 100%;
+    height: 420px;
+    display: inline-block;
+    box-sizing: border-box;
+}

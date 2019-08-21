@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+main{
+    box-sizing: border-box;
+    margin-left: 430px;
+    font-family: "나눔스퀘어라운드";
+}
+#contents{
+    display: inline-block;
+    height: 945px;
+}
+#title{
+    display: inline-block;
+    margin: 50px 70px;
+    font-size: 36pt;
+    padding: 40px 1180px 30px 30px;
+    border-bottom: 1px solid #ccc;
+}
+#title h1{
+    margin: 0;
+}
+#date{
+    font-size: 15pt;
+}
+#contents-body{
+    margin: 50px 70px;
+    font-size: 40pt;
+}
+
+#comment-form{
+    margin: 50px 0px;
+}
